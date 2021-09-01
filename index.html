@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculation Date</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="tab tab-active" data-name="datecalc">Калькулятор дат</li>
+        <li class="tab" data-name="timer">Таймер</li>
+      </ul>
+    </nav>
+
+    <form class="visible" id="datecalc">
+      <h3>Калькулятор дат</h3>
+      <label class="firstDate">
+        <strong>Первая дата: </strong>
+        <input type="date" id="firstDate" />
+      </label>
+      <label class="secondDate">
+        <strong>Вторая дата: </strong>
+        <input type="date" id="secondDate" /> </label
+      ><br />
+      <button type="submit">Рассчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form>
+
+    <form id="timer">
+      <h3>Таймер</h3>
+      <input type="number" min="0" id="hours" value="0" max="24" />
+      <span>ч :</span>
+      <input type="number" min="0" id="minutes" value="0" max="60" />
+      <span>мин :</span>
+      <input type="number" min="0" id="seconds" value="5" max="60" />
+      <span>сек</span>
+      <br />
+      <button class="timer-btn" type="submit">Старт</button>
+      <p id="timer__result"></p>
+    </form>
+  </body>
+</html>
