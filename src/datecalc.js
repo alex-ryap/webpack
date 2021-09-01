@@ -1,5 +1,5 @@
 import { formatErr, formatRes } from './common.js';
-import { DateTime } from './luxon.js';
+import { DateTime } from 'luxon';
 
 export class DateCalc {
   constructor(form) {
@@ -43,13 +43,13 @@ export class DateCalc {
   formatDiff(diff) {
     let result = '';
     if (diff.years) {
-      result += diff.years + ' Лет';
+      result += diff.years + ' г. ';
     }
     if (diff.months) {
-      result += diff.months + ' Месяцев';
+      result += diff.months + ' мес. ';
     }
     if (diff.days) {
-      result += diff.days + ' Дней';
+      result += diff.days + ' дн.';
     }
 
     return result;

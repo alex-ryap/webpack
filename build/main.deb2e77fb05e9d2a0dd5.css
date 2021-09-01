@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffce00;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  font-size: 20px;
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+.tab-active {
+  background-color: transparent;
+}
+
+form {
+  display: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.visible {
+  display: block;
+}
+
+h3 {
+  margin: 100px 0 50px 0;
+  font-size: 60px;
+}
+
+.firstDate {
+  margin-right: 30px;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+}
+
+button[type='submit'] {
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+#datecalc__result,
+#timer__result {
+  margin-top: 30px;
+}
+
+#timer > span {
+  font-size: 20px;
+}
+
+.timer-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time:not(:last-child) {
+  margin-right: 20px;
+}
+
+.separator {
+  margin-right: 20px;
+}
+
+input[type='number'] {
+  width: 100%;
+  max-width: 60px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+

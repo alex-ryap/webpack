@@ -1,5 +1,5 @@
 import { formatErr, formatRes } from './common.js';
-import { DateTime } from './luxon.js';
+import { DateTime } from 'luxon';
 
 export class Timer {
   constructor(form) {
